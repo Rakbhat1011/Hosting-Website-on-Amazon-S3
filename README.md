@@ -42,7 +42,7 @@ However, unfortunately an error was made. The reason for this error was that the
 The Policy prevents all aws accounts from deleting the resource including the bucket owner.
 This image is the bucket policy to deny delete privileges on your website files.
 
-## <a name="3_Key Learnings"></a> 3 Key Learnings
+## <a name="3_Key_Learnings"></a> 3 Key Learnings
 - #### What is Amazon S3?
   An object storage service that allows secure storage of data
 - #### What is static website hosting?
