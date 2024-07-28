@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raksha Jagadish</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+     <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const paragraphs = document.querySelectorAll('.home_paragraph'); 
+
+            paragraphs.forEach(paragraph => {
+                const text = paragraph.textContent;
+                paragraph.textContent = '';
+
+                let index = 0;
+
+                function addLetter() {
+                    paragraph.textContent += text[index];
+                    index++;
+                    if (index < text.length) {
+                        setTimeout(addLetter, 50); 
+                    }
+                }
+
+                addLetter();
+            });
+        });
+    </script> 
+</head>
+<body>
+    <header id="home">
+        <h1>Raksha Jagadish</h1>
+    
+    <hr></header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="Accomplishments.html">Accomplishments</a></li>
+            <li><a href="Mywork.html">My work</a></li>
+            <li><a href="assets/RakshaJagadish.pdf">Resume</a></li> 
+        </ul>
+        </nav>
+        <section id="home" class="container">
+            <div class="left-column">
+                <img src="assets/bg_1.png" alt="Raksha Jagadish" class="profile-image">
+            </div>
+            <div class="right-column">
+                <div class="vertical-line"></div>
+                <div class="text-box">
+                    <p class="home_paragraph">I'm Raksha Jagadish, a Software Engineer dedicated to continuous growth.</p>
+                    <br>
+                    <p class= "home_paragraph">I have 2.5 years of experience in the tech industry, specializing in developing, testing, and deploying large-scale software solutions.</p>
+                    <br>
+                    <p class= "home_paragraph">Currently a graduate student in Computer Science at California State University. </p>
+                    <br>
+                    <p class= "home_paragraph">I thrive in collaborative environments and enjoy working with cross-functional teams.</p>
+                    <br>
+                    <p class= "home_paragraph">I am passionate about learning new technologies and improving my technical expertise.</p>
+                    <br>
+                    <a href="Mywork.html"><button class="explore-btn">Explore More</button></a>
+                    <div class="emoji-container">
+                        <div class="moving-emoji">🚀</div>
+                    </div>
+                    <br>
+                </div>
+            </div>
+        </section>   <footer>
+            <p>Connect with me on <a href="https://github.com/Rakbhat1011" target="_blank">Github</a> and <a href="https://www.linkedin.com/in/rakshajagadish" target="_blank">LinkedIn</a></p>
+        </footer>  
+          
+    </body>
+    </html>
+       
